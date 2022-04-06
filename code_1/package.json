@@ -1,8 +1,8 @@
 {
-  "name": "tcd",
+  "name": "code_1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "auth.js",
   "scripts": {
     "test": "jest"
   },

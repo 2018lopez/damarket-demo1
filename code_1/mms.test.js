@@ -1,8 +1,10 @@
+//Import all Classes and Functions
 const customer = require('./customer')
 const management = require('./management')
 const vendor = require('./vendor')
 const auth = require('./auth')
 
+//New Instance of the classes
 const user = new customer()
 const manageUser = new management()
 const vendorUser = new vendor()

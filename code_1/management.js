@@ -1,7 +1,6 @@
-const auth = require('./auth')
+// Management class - include all function relate to management include a
+//const auth = require('./auth')
 class Management{
-
-
 
 
     //Function for approveReserveStall - verify that the stall is avaliable, vendor has exist and also authenicate management user
@@ -15,7 +14,7 @@ class Management{
             return true
         }
 
-            return true
+            return false
     }
 
     //Function to generate Invoice - Verify that vendor and stall exist. Authenicate user management account
@@ -24,7 +23,7 @@ class Management{
         const stall =  ['C10','P15','VF30', 'F3']// list of stall  
         const vendor = ['v56', 'v34', 'v90', 'v32']// list of vendor accounts
 
-        if(vendor.includes(vendorId) && stall.includes(stallId) && authUser){
+        if(vendor.includes(vendorId) && stall.includes(stallId) && authUser == true){
             
             return true
         }
